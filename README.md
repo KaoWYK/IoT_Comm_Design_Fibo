@@ -2,6 +2,7 @@
 
 ## Introduction
 Mixture of Communication Pattern: a system with a simple ﬁbonacci caculator capability and a logging feature as following:
+
 ![圖片](https://user-images.githubusercontent.com/16716620/144636360-3ca74bad-d408-4af0-ab5b-9d695933ecfc.png)
 
 
