@@ -1,5 +1,10 @@
 # IoT_Comm_Design_Fibo
 
+## Introduction
+Mixture of Communication Pattern: a system with a simple ﬁbonacci caculator capability and a logging feature as following:
+![圖片](https://user-images.githubusercontent.com/16716620/144636360-3ca74bad-d408-4af0-ab5b-9d695933ecfc.png)
+
+
 ## Environment
 ```
 - Linux thinkpad-t480 5.4.0-81-generic #91~18.04.1-Ubuntu SMP Fri Jul 23 13:36:29 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
