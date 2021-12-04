@@ -37,12 +37,12 @@ if __name__ == "__main__":
     log_pb2_grpc.add_LogServicer_to_server(servicer, server)
 
     sub.start()
-    print( "sub started..." )
+    print( "Server Sub Started..." )
 
     try:
         server.add_insecure_port(f"{args['ip']}:{args['port']}")
         server.start()
-        print(f"Run gRPC Server at {args['ip']}:{args['port']}")
+        print(f"Run gRPC Server for Order-Logging at {args['ip']}:{args['port']}")
         server.wait_for_termination()
     except KeyboardInterrupt:
         pass

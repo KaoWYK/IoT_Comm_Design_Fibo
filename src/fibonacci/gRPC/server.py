@@ -22,6 +22,7 @@ class FibCalculatorServicer(fib_pb2_grpc.FibCalculatorServicer):
 
         response = fib_pb2.FibResponse()
         response.value = value
+        print("Received: ", n, "  Return: ", response)
 
         return response
 
@@ -55,7 +56,7 @@ if __name__ == "__main__":
     try:
         server.add_insecure_port(f"{args['ip']}:{args['port']}")
         server.start()
-        print(f"Run gRPC Server at {args['ip']}:{args['port']}")
+        print(f"Run gRPC Server for Fibonacci Calculation at {args['ip']}:{args['port']}")
         server.wait_for_termination()
     except KeyboardInterrupt:
         pass

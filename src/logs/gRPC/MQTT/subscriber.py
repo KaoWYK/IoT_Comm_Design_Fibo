@@ -8,7 +8,7 @@ import threading
 history = []
 
 def on_message(client, obj, msg):
-    print(f"TOPIC:{msg.topic}, VALUE:{msg.payload}")
+    print("Added order in history: ", int(msg.payload))
     history.append( int(msg.payload) )
 
 def getHistory():
@@ -16,7 +16,6 @@ def getHistory():
 
 def listen():
     # Establish connection to mqtt broker
-    print("start listening...")
     client = mqtt.Client()
     client.on_message = on_message
     client.connect(host = "localhost", port = 1883)
