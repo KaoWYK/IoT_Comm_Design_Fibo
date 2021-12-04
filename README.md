@@ -1,5 +1,8 @@
 # IoT_Comm_Design_Fibo
 
+## Demo Video
+https://youtu.be/XS9adYqfIsk
+
 ## Introduction
 Mixture of Communication Pattern: a system with a simple ﬁbonacci caculator capability and a logging feature as following:
 
