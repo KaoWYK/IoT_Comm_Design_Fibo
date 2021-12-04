@@ -59,11 +59,9 @@ $ python3 server.py --ip 0.0.0.0 --port 8800
 ```
 
 ## Testing
-- Open another terminal
 ####  Using `curl` to perform client request
 - Calculate fibonacci: enter # for order
 ```bash
-# curl -X POST -d '{"order": <number>}' http://localhost:8000/rest/fibonacci
 $ curl -X POST -d '{"order": 10}' http://localhost:8000/rest/fibonacci
 # Will receive {"order":10,"answer":55}
 $ curl -X POST -d '{"order": 5}' http://localhost:8000/rest/fibonacci
